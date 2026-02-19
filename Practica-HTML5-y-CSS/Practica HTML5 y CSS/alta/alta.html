@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alta Usuario</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
-<body>
-    
+
+<body class="cuerpo">
+
+<header class="cabecera">
+    <h1>Explora cerca de ti</h1>
+    <p class="subtitulo">Formulario de registro</p>
+</header>
+
+<nav class="menu">
+    <ul class="lista-menu">
+        <li class="elemento-menu"><a class="enlace-menu" href="../Viajes/viajes.html">Volver</a></li>
+        
+    </ul>
+</nav>
+
+<section class="seccion-alta">
+
+    <form class="formulario" action="index.html">
+
+        <h2 class="titulo-formulario">Formulario de Alta</h2>
+
+        <label class="etiqueta">Nombre</label>
+        <input class="campo-texto" type="text" required>
+
+        <label class="etiqueta">Apellidos</label>
+        <input class="campo-texto" type="text" required>
+
+        <label class="etiqueta">DNI</label>
+        <input class="campo-texto" type="text" pattern="[0-9]{8}[A-Z]{1}" required>
+
+        <label class="etiqueta">Dirección</label>
+        <input class="campo-texto" type="text"
+        pattern="C\/[A-Za-z]+\sNº[0-9]+\sP[A-Za-z]" required>
+
+        <label class="etiqueta">Ciudad</label>
+        <input class="campo-texto" type="text" required>
+
+        <label class="etiqueta">Código Postal</label>
+        <input class="campo-texto" list="codigos" pattern="[0-9]{5}" required>
+        <datalist id="codigos">
+            <option value="28001">
+            <option value="08001">
+            <option value="41001">
+            <option value="15001">
+            <option value="46001">
+        </datalist>
+
+        <label class="etiqueta">País</label>
+        <input class="campo-texto" type="text" required>
+
+        <label class="etiqueta">Fecha de nacimiento</label>
+        <input class="campo-texto" type="date">
+
+        <label class="etiqueta">Email</label>
+        <input class="campo-texto" type="email">
+
+        <label class="etiqueta">Contraseña</label>
+        <input class="campo-texto" type="password"
+        pattern=".{1,7}_[A-Za-z0-9]{5}&[0-9]{2}" required>
+
+        <label class="etiqueta">Sexo</label>
+        <input type="radio" name="sexo" value="hombre" required> Hombre
+        <input type="radio" name="sexo" value="mujer"> Mujer
+
+        <label class="etiqueta">Aficiones</label>
+        <input type="checkbox" name="aficion"> Escalada
+        <input type="checkbox" name="aficion"> Trekking
+        <input type="checkbox" name="aficion"> Birding
+        <input type="checkbox" name="aficion"> Turismo
+        <input class="campo-texto" type="text" placeholder="Otra afición">
+
+        <label class="etiqueta">Foto de perfil</label>
+        <input type="file">
+
+        <div class="contenedor-botones">
+            <input class="boton" type="reset" value="Borrar">
+            <input class="boton" type="submit" value="Enviar">
+            <a href="index.html" class="boton-cancelar">Cancelar</a>
+        </div>
+
+    </form>
+
+</section>
+
+<footer class="pie">
+    <p class="texto-footer">Contacto: exploraespania@explor.com</p>
+</footer>
+
 </body>
 </html>
