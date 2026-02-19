@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+
+.cuerpo {
+    font-family: Arial;
+    background-color: #365d3a;
+
+}
+
+
+.cabecera {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #749470;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    animation: fadeInDown 0.8s ease forwards
+   
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+ text-shadow: 1px 1px green;
+ box-shadow: 1px 3px #749470;
+}
+
+.subtitulo {
+    font-style: italic;
+}
+
+
+.menu {
+    margin-top: 140px; 
+    background-color: #749470;
+}
+
+.lista-menu {
+    list-style-type: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.elemento-menu {
+    display: inline;
+    margin: 20px;
+}
+
+.enlace-menu {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.enlace-menu:hover {
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.contenedor-principal {
+    width: 100%;
+}
+
+
+.publicidad {
+    width: 15%;
+    float: left;
+    overflow: auto;
+    top: 95px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.imagen-publicidad {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.imagen-publicidad:hover {
+    transform: scale(1.1);
+}
+
+
+.contenido-central {
+    width: 65%;
+    float: left;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid #003366;
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+.articulo {
+    margin-bottom: 40px;
+}
+
+.texto {
+    text-align: justify;
+    margin-bottom: 15px;
+    text-indent: 20px;
+}
+
+.imagen-articulo {
+    width: 100%;
+    margin: 20px 0;
+    transition: transform 1s;
+}
+
+.imagen-articulo:hover {
+    transform: scale(1.1);
+}
+
+
+.video {
+    display: block;
+    margin: 40px auto;
+}
+
+
+.pie {
+    clear: both;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
