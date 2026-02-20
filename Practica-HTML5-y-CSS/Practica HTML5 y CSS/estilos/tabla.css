@@ -18,31 +18,19 @@
     margin: 0 auto;
     border-collapse: collapse;
     background-color: white;
+    padding: 10px;
+    border: 1px solid black;
     box-shadow: 5px 5px 15px gray;
 }
 
-.tabla-destinos th {
+td {
     background-color: #749470;
-    color: white;
+    color: black;
     padding: 10px;
-    border: 1px solid black;
-}
-
-.tabla-destinos td {
-    padding: 10px;
-    border: 1px solid black;
-    text-align: center;
+    border: 3px solid black;
 }
 
 
-.tabla-destinos tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-
-.tabla-destinos tr:hover {
-    background-color: #d9ead3;
-}
 
 
 .titulo-caption {
