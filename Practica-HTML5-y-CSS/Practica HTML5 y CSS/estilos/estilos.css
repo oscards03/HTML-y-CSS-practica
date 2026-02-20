@@ -87,11 +87,19 @@ h1, h2, h3 {
     top: 95px;
     background-color: #e6e6e6;
     padding: 10px;
-    box-sizing: border-box;
-    
-    
+    box-sizing: border-box; 
 }
 
+
+.publicidad2 {
+    width: 15%;
+    float: right;
+    overflow: auto;
+    top: 95px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    box-sizing: border-box; 
+}
 
 .imagen-publicidad {
     width: 100%;
@@ -104,9 +112,9 @@ h1, h2, h3 {
 
 
 .contenido-central {
-    width: 65%;
-    float: left;
+    width: 70%;
     padding: 20px;
+    float:left;
     background-color: white;
     box-sizing: border-box;
     border: 2px solid #003366;
