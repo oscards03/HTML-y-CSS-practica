@@ -1,0 +1,64 @@
+/*viajes*/
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+
+.cuerpo {
+    font-family: Arial;
+    background-color: #365d3a;
+
+}
+
+
+.cabecera {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #749470;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    animation: fadeInDown 0.8s ease forwards
+   
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+ text-shadow: 1px 1px green;
+ box-shadow: 1px 3px #749470;
+}
+
+.subtitulo {
+    font-style: italic;
+}
+
+
+.menu {
+    margin-top: 140px; 
+    background-color: #749470;
+}
+
+
+.pie {
+    clear: both;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
